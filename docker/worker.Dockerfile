@@ -16,7 +16,6 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 
 RUN pnpm --filter @nexbot/database db:generate
-RUN pnpm --filter @nexbot/database build
 RUN pnpm --filter @nexbot/shared build
 RUN pnpm --filter @nexbot/worker build
 

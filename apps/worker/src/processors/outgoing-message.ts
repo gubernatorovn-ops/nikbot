@@ -1,5 +1,5 @@
 import { Job } from 'bullmq';
-import { PrismaClient } from '@nexbot/database';
+import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
