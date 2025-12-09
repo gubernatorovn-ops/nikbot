@@ -1,5 +1,7 @@
 FROM node:20-alpine AS builder
 
+RUN apk add --no-cache openssl openssl-dev
+
 RUN npm install -g pnpm
 
 WORKDIR /app
@@ -18,6 +20,8 @@ RUN pnpm --filter @nexbot/shared build
 RUN pnpm --filter @nexbot/worker build
 
 FROM node:20-alpine AS runner
+
+RUN apk add --no-cache openssl openssl-dev
 
 RUN npm install -g pnpm
 
