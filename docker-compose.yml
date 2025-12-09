@@ -38,7 +38,7 @@ services:
       dockerfile: docker/api.Dockerfile
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql://chatflow:${DB_PASSWORD:-chatflow_dev}@postgres:5432/chatflow
+      DATABASE_URL: postgresql://nexbot:${DB_PASSWORD:-nexbot_dev}@postgres:5432/nexbot
       REDIS_URL: redis://redis:6379
       JWT_SECRET: ${JWT_SECRET}
       JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET}
@@ -60,7 +60,7 @@ services:
       dockerfile: docker/worker.Dockerfile
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql://chatflow:${DB_PASSWORD:-chatflow_dev}@postgres:5432/chatflow
+      DATABASE_URL: postgresql://nexbot:${DB_PASSWORD:-nexbot_dev}@postgres:5432/nexbot
       REDIS_URL: redis://redis:6379
       OPENAI_API_KEY: ${OPENAI_API_KEY}
     depends_on:
