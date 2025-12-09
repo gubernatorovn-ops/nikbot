@@ -1,0 +1,23 @@
+{
+  "name": "nexbot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "dev:api": "pnpm --filter @nexbot/api dev",
+    "dev:web": "pnpm --filter @nexbot/web dev",
+    "dev:worker": "pnpm --filter @nexbot/worker dev",
+    "db:generate": "pnpm --filter @nexbot/database db:generate",
+    "db:push": "pnpm --filter @nexbot/database db:push",
+    "db:studio": "pnpm --filter @nexbot/database db:studio"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
