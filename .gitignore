@@ -2,8 +2,7 @@ node_modules
 dist
 .next
 .env
-.env.local
-.env.production
+.env.*
 *.log
 .turbo
 .DS_Store
