@@ -13,9 +13,9 @@ RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-RUN pnpm --filter @chatflow/database db:generate
-RUN pnpm --filter @chatflow/shared build
-RUN pnpm --filter @chatflow/api build
+RUN pnpm --filter @nexbot/database db:generate
+RUN pnpm --filter @nexbot/shared build
+RUN pnpm --filter @nexbot/api build
 
 FROM node:20-alpine AS runner
 
