@@ -6,7 +6,7 @@ import { Providers } from '@/components/providers';
 const inter = Inter({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata: Metadata = {
-  title: 'ChatFlow',
+  title: 'Nikbot',
   description: 'Платформа для автоматизации чат-ботов',
 };
 

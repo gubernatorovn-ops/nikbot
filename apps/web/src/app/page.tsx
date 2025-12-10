@@ -9,7 +9,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Bot className="w-8 h-8 text-primary" />
-            <span className="text-xl font-bold">ChatFlow</span>
+            <span className="text-xl font-bold">Nikbot</span>
           </div>
           <div className="flex items-center gap-4">
             <Link href="/auth/login" className="text-sm hover:underline">
@@ -144,7 +144,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="py-8 border-t">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          © 2024 ChatFlow. Все права защищены.
+          © 2024 Nikbot. Все права защищены.
         </div>
       </footer>
     </div>
